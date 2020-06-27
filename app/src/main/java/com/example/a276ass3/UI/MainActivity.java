@@ -37,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button helpButton = (Button) findViewById(R.id.Main_HelpButton);
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = HelpActivity.makeLaunchIntent(MainActivity.this);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

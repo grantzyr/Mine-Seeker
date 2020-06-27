@@ -128,12 +128,6 @@ public class PlayGameActivity extends AppCompatActivity {
                             steps.setText("Step Used: " + gameManager.getStepUsed());
 
 
-                            MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.scan);
-                            mediaPlayer.start();
-                            Vibrator vibrator = (Vibrator) getSystemService(Service.VIBRATOR_SERVICE)
-                            vibrator.vibrate(500);
-
-
                             if (gameManager.getRestOfTotalBomb() == 0) {
                             FragmentManager manager = getSupportFragmentManager();
                             GameOver dialog = new GameOver();
