@@ -18,6 +18,7 @@ public class OptionsActivity extends AppCompatActivity {
         Intent intent = new Intent (context, OptionsActivity.class);
         return intent;
     }
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
