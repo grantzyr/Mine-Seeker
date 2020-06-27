@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">276Ass3</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="main_play_game_button">Play Game!</string>
+    <string name="main_options_button">Options</string>
+    <string name="main_help_button">Help</string>
 </resources>

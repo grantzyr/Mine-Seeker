@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".UI.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:gravity="center"
-            android:text="Main Menu"
+            android:text="@string/main_menu"
             android:textSize="36sp" />
 
         <LinearLayout
@@ -31,7 +31,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
 
                 <Button
                     android:id="@+id/Main_PlayButton"
@@ -43,7 +44,7 @@
                     android:layout_marginBottom="5dp"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
-                    android:text="Play Game!"
+                    android:text="@string/main_play_game_button"
                     android:textSize="18sp" />
 
                 <Button
@@ -56,7 +57,7 @@
                     android:layout_marginBottom="5dp"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
-                    android:text="Options"
+                    android:text="@string/main_options_button"
                     android:textSize="18sp" />
 
                 <Button
@@ -69,17 +70,17 @@
                     android:layout_marginBottom="5dp"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
-                    android:text="Help"
+                    android:text="@string/main_help_button"
                     android:textSize="18sp" />
 
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imageView2"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                tools:srcCompat="@drawable/bomb" />
+                android:background="@drawable/bomb"
+                android:orientation="vertical"></LinearLayout>
 
         </LinearLayout>
 

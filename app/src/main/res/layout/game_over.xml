@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gameover_Gameover"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Game Over"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/gameover_Conguatulations"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Conguatulations! You won!"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bomb"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

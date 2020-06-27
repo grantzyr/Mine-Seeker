@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.OptionsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Options_SettingText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0.5"
+            android:fontFamily="monospace"
+            android:gravity="bottom|left"
+            android:text="Settings"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="60dp">
+
+                <TextView
+                    android:id="@+id/Options_BoardSizeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Board Size"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/Options_BoardSizeSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:paddingRight="0dp"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="60dp">
+
+                <TextView
+                    android:id="@+id/Options_MinesText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="# Mines"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/Options_MinesSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="300dp"
+                android:layout_marginBottom="130dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Erase times played" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
