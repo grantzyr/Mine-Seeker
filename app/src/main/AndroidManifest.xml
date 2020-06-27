@@ -6,21 +6,25 @@
 
     <application
         android:allowBackup="true"
+        android:configChanges="keyboard|orientation|keyboardHidden|screenSize"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".UI.HelpActivity"></activity>
+        <activity android:name=".UI.WelcomeActivity"></activity>
+        <activity android:name=".UI.HelpActivity" />
         <activity android:name=".UI.OptionsActivity" />
-        <activity android:name=".UI.PlayGameActivity" />
         <activity android:name=".UI.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".UI.PlayGameActivity" />
+
     </application>
 
 </manifest>

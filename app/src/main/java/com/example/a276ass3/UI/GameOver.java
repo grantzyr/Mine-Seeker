@@ -28,13 +28,6 @@ public class GameOver extends AppCompatDialogFragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 getActivity().finish();
-
-//                switch (which) {
-//                    case DialogInterface.BUTTON_POSITIVE:
-//                        break;
-//                    case DialogInterface.BUTTON_NEGATIVE:
-//                        break;
-//                }
             }
         };
 
